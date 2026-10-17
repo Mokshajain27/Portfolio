@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/bg.jpg" class="logo">
+                <ul>
+                
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>'Hi,I am <br><span>Moksha Jain</span>'</div></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title"> About me</h1>
+                    <p>Hello! I'm  Moksha Jain-a passionate <br> and detail-oriented individual <br> with a keen eye for creativity and a drive for excellence. <br> Whether I'm designing thoughtful visuals, building <br>digital experiences, or solving real-world <br>problems, I strive to blend asthetics with purpose. <br>I believe in the power of simplicity, precision <br>through work. With every project,I aim <br>to learn,grow and contribute meaningfully. <br>This portfolio is a reflection of my journey, <br>ideas, and skills I bring to the ground.  </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills',event)">Skills</p>
+                        <p class="tab-links" onclick="openTab('education',event)">Education</p>
+                        <p class="tab-links" onclick="openTab('experience',event)">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br>Designing Web</li>
+                            <li><span>Web Development</span> <br>Web app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-28</span> <br>Btech from AITR Indore</li>
+                            <li><span>2024</span> <br>12 PCM from Aditya Birla School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern</span> <br>Web developer at Pinnacle Labs</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="Sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <h2>Project-1</h2>
+                    <img src="image/work-1.png" >
+                    <div class="layer">
+                        <h2>Auto Correct Tool</h2>
+                        <p>This tool helps you to correct your spell mistakes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-list">
+                <div class="work">
+                    <h2>Project-2</h2>
+                    <img src="image/work-1.png" >
+                    <div class="layer">
+                        <h2>Weather Dashboard</h2>
+                        <p>This dashboard helps you to detect weather conditions at any loaction.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section id="contact-info">
+  <div class="contact-info-container">
+    <h2>Get in Touch</h2>
+    <p>You can also reach me directly:</p>
+    
+    <div class="contact-details">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:mokshaajain27@example.com">mokshaajain27@example.com</a>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/moksha-jain-719b36316" target="_blank">linkedin.com/in/moksha-jain-719b36316</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+      <h1 class="Sub-title"> Contact</h1>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+       </form>
+    </div>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 Moksha Jain. All rights reserved.</p>
+  </footer>
+
+  
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabname,event){
+            for(let tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(let tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<h1>hello world</h1>   
+</body>
+</html>
